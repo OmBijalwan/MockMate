@@ -4,13 +4,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDWJmX1z1tU7ykgU2KCe8xV6RGoWoHNoAQ",
-  authDomain: "mockmate-3bccc.firebaseapp.com",
-  projectId: "mockmate-3bccc",
-  storageBucket: "mockmate-3bccc.firebasestorage.app",
-  messagingSenderId: "638031368008",
-  appId: "1:638031368008:web:8e83879750b1714212ed7d",
-  measurementId: "G-0TTGDT170L"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
